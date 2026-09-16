@@ -1,0 +1,27 @@
+name: IMOU Local PTZ
+version: "0.1.1"
+slug: imou_local_ptz
+description: Local HTTP and ONVIF PTZ proxy for IMOU/Dahua cameras
+url: https://github.com/mihaifireball/ha-imou-local
+arch:
+  - aarch64
+  - amd64
+startup: services
+boot: auto
+init: false
+options:
+  camera_host: 10.100.1.201
+  dvrip_port: 37777
+  username: admin
+  password: ""
+schema:
+  camera_host: str
+  dvrip_port: port
+  username: str
+  password: password
+ports:
+  8000/tcp: 8089
+ports_description:
+  8000/tcp: HTTP and ONVIF PTZ proxy
+webui: http://[HOST]:[PORT:8000]/health
+watchdog: http://[HOST]:[PORT:8000]/health

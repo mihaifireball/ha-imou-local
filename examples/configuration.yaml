@@ -1,0 +1,32 @@
+rest_command:
+  # IMOU Ranger 2 via this add-on (default exposed port: 8089)
+  imou_left:
+    url: "http://HOME_ASSISTANT_IP:8089/ptz/move?code=Left&speed=2&duration=0.4"
+    method: GET
+  imou_right:
+    url: "http://HOME_ASSISTANT_IP:8089/ptz/move?code=Right&speed=2&duration=0.4"
+    method: GET
+  imou_up:
+    url: "http://HOME_ASSISTANT_IP:8089/ptz/move?code=Up&speed=2&duration=0.4"
+    method: GET
+  imou_down:
+    url: "http://HOME_ASSISTANT_IP:8089/ptz/move?code=Down&speed=2&duration=0.4"
+    method: GET
+  imou_stop:
+    url: "http://HOME_ASSISTANT_IP:8089/ptz/stop"
+    method: GET
+
+  # Xiaomi C200 local HTTP PTZ from xiaomi-c200-t31
+  xiaomi_left:
+    url: "http://XIAOMI_CAMERA_IP:8088/left"
+    method: GET
+  xiaomi_right:
+    url: "http://XIAOMI_CAMERA_IP:8088/right"
+    method: GET
+  xiaomi_up:
+    url: "http://XIAOMI_CAMERA_IP:8088/up"
+    method: GET
+  xiaomi_down:
+    url: "http://XIAOMI_CAMERA_IP:8088/down"
+    method: GET
+

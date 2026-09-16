@@ -1,0 +1,76 @@
+type: vertical-stack
+cards:
+  - type: picture-glance
+    title: IMOU Ranger 2
+    camera_image: camera.imou_ranger
+    camera_view: live
+    entities: []
+  - type: grid
+    columns: 3
+    square: false
+    cards:
+      - type: button
+        name: Stânga
+        icon: mdi:arrow-left
+        tap_action:
+          action: perform-action
+          perform_action: rest_command.imou_left
+      - type: button
+        name: Sus
+        icon: mdi:arrow-up
+        tap_action:
+          action: perform-action
+          perform_action: rest_command.imou_up
+      - type: button
+        name: Dreapta
+        icon: mdi:arrow-right
+        tap_action:
+          action: perform-action
+          perform_action: rest_command.imou_right
+      - type: button
+        name: Jos
+        icon: mdi:arrow-down
+        tap_action:
+          action: perform-action
+          perform_action: rest_command.imou_down
+      - type: button
+        name: Stop
+        icon: mdi:stop
+        tap_action:
+          action: perform-action
+          perform_action: rest_command.imou_stop
+
+  - type: picture-glance
+    title: Xiaomi C200
+    camera_image: camera.xiaomi_c200
+    camera_view: live
+    entities: []
+  - type: grid
+    columns: 4
+    square: false
+    cards:
+      - type: button
+        name: Stânga
+        icon: mdi:arrow-left
+        tap_action:
+          action: perform-action
+          perform_action: rest_command.xiaomi_left
+      - type: button
+        name: Sus
+        icon: mdi:arrow-up
+        tap_action:
+          action: perform-action
+          perform_action: rest_command.xiaomi_up
+      - type: button
+        name: Jos
+        icon: mdi:arrow-down
+        tap_action:
+          action: perform-action
+          perform_action: rest_command.xiaomi_down
+      - type: button
+        name: Dreapta
+        icon: mdi:arrow-right
+        tap_action:
+          action: perform-action
+          perform_action: rest_command.xiaomi_right
+
