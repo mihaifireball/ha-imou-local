@@ -52,7 +52,6 @@ env.update(
 print(f"[imou-ptz] Starting local proxy for {host}:{port}", flush=True)
 os.execvpe(
     "python3",
-    ["python3", "-m", "imou_ptz", "serve", "--bind", "0.0.0.0", "--api-port", "8000"],
+    ["python3", "/proxy.py"],
     env,
 )
-

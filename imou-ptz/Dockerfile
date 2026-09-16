@@ -1,7 +1,7 @@
 FROM python:3.12-alpine
 
 ARG PTZ_IMOU_COMMIT=686e9dc79725b2cfe21aeeb804d8eabbe33e8fb6
-ARG BUILD_VERSION=0.1.1
+ARG BUILD_VERSION=0.1.2
 ARG BUILD_ARCH
 
 LABEL io.hass.version="${BUILD_VERSION}" \
@@ -20,5 +20,7 @@ ENV PYTHONPATH=/opt/ptz-imou
 RUN python3 -c "from imou_ptz.server import run_server"
 
 COPY run.py /run.py
+COPY proxy.py privacy_diagnostics.py /
+RUN python3 -c "import proxy, privacy_diagnostics"
 
 CMD ["python3", "/run.py"]

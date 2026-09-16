@@ -1,5 +1,5 @@
 name: IMOU Local PTZ
-version: "0.1.1"
+version: "0.1.2"
 slug: imou_local_ptz
 description: Local HTTP and ONVIF PTZ proxy for IMOU/Dahua cameras
 url: https://github.com/mihaifireball/ha-imou-local

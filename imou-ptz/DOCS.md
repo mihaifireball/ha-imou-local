@@ -1,5 +1,15 @@
 # Configuration
 
+## Privacy diagnostic (0.1.2)
+
+Open `http://HOME_ASSISTANT_IP:8089/diagnostics/privacy` from your LAN. The first
+request starts a background read-only check; refresh to obtain the final JSON.
+No camera settings are changed. The report is cached until the add-on restarts.
+This is not a Privacy switch and does not prove local Privacy support.
+See the [complete guide](https://github.com/mihaifireball/ha-imou-local/blob/main/docs/privacy-diagnostics-ro.md).
+
+## Camera and PTZ
+
 For the complete Home Assistant REST command and video + PTZ card setup, see
 the [Romanian guide](https://github.com/mihaifireball/ha-imou-local/blob/main/docs/home-assistant-ptz-ro.md).
 

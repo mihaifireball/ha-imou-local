@@ -22,6 +22,13 @@ This add-on controls one IMOU camera. Xiaomi commands are examples based on
 your existing HTTP hack; video and camera entities must be configured separately.
 This is not an automatic video integration or a multi-camera proxy.
 
+## Privacy diagnostics (0.1.2)
+
+[Read-only Privacy diagnostic guide (Romanian)](docs/privacy-diagnostics-ro.md).
+After updating, open `http://HOME_ASSISTANT_IP:8089/diagnostics/privacy` on your
+LAN and refresh until the report finishes. This probes candidate settings only;
+it does not enable/disable Privacy and does not claim firmware compatibility.
+
 ## Video + PTZ in Home Assistant
 
 See the [Romanian step-by-step guide](docs/home-assistant-ptz-ro.md) for the
