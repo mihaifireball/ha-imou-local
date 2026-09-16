@@ -1,0 +1,7 @@
+# Merge into Home Assistant configuration.yaml, NOT go2rtc.yaml.
+# If rest_command already exists, add only imou_ptz under that existing key.
+rest_command:
+  imou_ptz:
+    url: "http://10.100.1.34:8089/ptz/move?code={{ direction }}&speed=2&duration=0.4"
+    method: GET
+    timeout: 15

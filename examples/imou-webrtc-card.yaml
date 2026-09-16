@@ -1,0 +1,17 @@
+# Dashboard > Edit > Add card > Manual.
+# Requires the HACS WebRTC Camera integration and LAN access to go2rtc port 1984.
+type: custom:webrtc-camera
+title: Imou Ranger
+url: imou_ranger
+server: http://10.100.1.34:1984/
+media: video
+ptz:
+  service: rest_command.imou_ptz
+  data_left:
+    direction: Left
+  data_right:
+    direction: Right
+  data_up:
+    direction: Up
+  data_down:
+    direction: Down

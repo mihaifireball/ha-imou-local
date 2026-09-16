@@ -22,7 +22,17 @@ This add-on controls one IMOU camera. Xiaomi commands are examples based on
 your existing HTTP hack; video and camera entities must be configured separately.
 This is not an automatic video integration or a multi-camera proxy.
 
-Only source/YAML checks have been performed here. Installation on HAOS/ARM64
-and physical camera control still need testing on your Raspberry Pi.
+## Video + PTZ in Home Assistant
+
+See the [Romanian step-by-step guide](docs/home-assistant-ptz-ro.md) for the
+REST command, a standalone PTZ test, and a WebRTC Camera card using the existing
+go2rtc stream. Copyable examples:
+
+- [REST command](examples/imou-rest-command.yaml)
+- [Video + PTZ card](examples/imou-webrtc-card.yaml)
+
+The owner has confirmed installation and local PTZ operation on Raspberry Pi 5
+with HAOS. The combined dashboard configuration still needs testing. Video
+playback was reported working on a phone but not yet on the laptop browser.
 
 Upstream: https://github.com/jeremyalbrecht/ptz-imou

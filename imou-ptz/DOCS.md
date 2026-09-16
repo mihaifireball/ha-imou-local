@@ -1,5 +1,8 @@
 # Configuration
 
+For the complete Home Assistant REST command and video + PTZ card setup, see
+the [Romanian guide](https://github.com/mihaifireball/ha-imou-local/blob/main/docs/home-assistant-ptz-ro.md).
+
 Set these values on the add-on Configuration tab:
 
 - `camera_host`: fixed LAN address of the IMOU camera.
@@ -24,4 +27,3 @@ http://HOME_ASSISTANT_IP:8089/ptz/move?code=Right&speed=2&duration=0.4
 
 Do not expose this port to the Internet. The API is designed for a trusted LAN
 and has no request authentication.
-
